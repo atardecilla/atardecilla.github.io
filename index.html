@@ -13,6 +13,27 @@
             margin: auto;
             overflow: hidden;
         }
+        /*
+        Profile image styling
+        */
+        .profile-img {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .profile-img img {
+            border-radius: 12px;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+        }
+        .intro-flex {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 30px;
+        }
         .main-info {
             background:#B83A2D;
             color: #fff;
@@ -37,9 +58,12 @@
     <div class="container">
         <header class="main-info">
             <h1>Alexander Tardecilla’s Website</h1>
-            <h1>Preferred Name: Alex</h1>
-            <h2>Email: <a href>alexandervtardecil@lewisu.edu</a></h2>
+            <h2>Preferred Name: Alex</h2>
+            <h2>Email: <a href="mailto:alexandervtardecil@lewisu.edu">alexandervtardecil@lewisu.edu</a></h2>
             <h3>Discord Username: alexerinooo</h3>
+        <div class="profile-img">
+            <img src="me-800-by-800.jpg" alt="Head and shoulder photo" width="800" height="800">
+        </div>
         </header>
 
         <section class="lewis">
@@ -52,22 +76,26 @@
 
         <section class="intro">
             <h2>Introduction</h2>
-            <p>Hello! I am Alex. I am junior year student at Lewis and I’m studying computer science.
-                I have 4 sisters, 0 brothers and am the middle child in my family. This means that
-                I am clearly the favorite child. I like making people laugh, good questions, and eventually want to
-                travel the world.
-            </p>
+            <div class="intro-flex">
+                    <p>Hello! I am Alex. I am junior year student at Lewis and I’m studying computer science. I am Filipino.
+                        I have 4 sisters, 0 brothers and am the middle child in my family. This means that
+                        I am clearly the favorite child. I have 2 dogs, named Mack and Tank. I think old technology is extremely cool, especially old cameras.
+                        I like making people laugh, good questions, and eventually want to
+                        travel the world.
+                    </p>
+        <div class="thumbnail-img">
+            <img src="me-300-by-300.jpg" alt="Thumbnail head and shoulder photo" width="300" height="300">
+            </div>
+        </div>
         </section>
 
         <section class="learn">
             <h2>What I Hope to Learn</h2>
-            <p>
                 <ul>
                     <li>Agile Methodology</li>
                     <li>Collaborative Projects</li>
                     <li>Cloud Computing</li>
                 </ul>
-            </p>
         </section>
 
         <section class="course">
@@ -100,6 +128,10 @@
         <section class="fun-fact">
             <h2>Fun Fact</h2>
             <p>Last year I had the opportunity to study abroad in Japan for about a month!</p>
+            <p>One philosophy that I thought was cool was the philosophy of ichigoichie
+                which translates to “one time, one meeting”. It means that every moment is unique, so cherish it.
+                (Also I practiced the curly quotes here.)
+            </p>
         </section>
     </div>
 </body>
