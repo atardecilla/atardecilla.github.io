@@ -28,6 +28,20 @@
             height: auto;
             box-shadow: 0 4px 16px rgba(0,0,0,0.2);
         }
+        /*
+        Thumbnail image styling
+        */
+        .thumbnail-img img.thumbnail {
+            width: 300px;
+            height: 300px;
+            cursor: pointer;
+        }
+        /*
+        just a note. i thought this hover effect was super cool
+        */
+        .thumbnail-img img.thumbnail:hover {
+            box-shadow: 0 0 10px 5px rgba(233, 9, 9, 0.5);
+        }
         .intro-flex {
             display: flex;
             align-items: flex-start;
@@ -83,9 +97,11 @@
                         I like making people laugh, good questions, and eventually want to
                         travel the world.
                     </p>
-        <div class="thumbnail-img">
-            <img src="me-300-by-300.jpg" alt="Thumbnail head and shoulder photo" width="300" height="300">
             </div>
+        <div class="thumbnail-img">
+            <a href="me-300-by-300.jpg" target="_blank">
+            <img src="me-300-by-300.jpg" alt="Thumbnail head and shoulder photo" class="thumbnail">
+            </a>
         </div>
         </section>
 
